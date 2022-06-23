@@ -1,0 +1,6 @@
+var object = {“a”:{“b”:”{“c”:”d”}”}} ;
+
+console.log("Result at 'a/.b/.c/.d/': ",_.get(object, 'a/.b/.c/.d/'));
+console.log("Result at 'a/.b/.nonexistent key': ",_.get(object, 'a/.b/.nonexistent', "default result"));
+
+
